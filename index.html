@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin ve Padding</title>
+    <style>
+        *{
+            margin: 0; /* margin: 0; borderın sağ e üstten olan default halindeki boşlukları sıfırlar */
+            box-sizing: border-box; /* padding yazdığımızda içteki elemana etki ederiz fakat border da verdiğimiz normal genişlik ve yükseklikte bozulur box-sizing: border-box; ise bu bozulmayı engeller ve verdiğimiz genişlik ve yüksekliği korur. */
+            padding: 0;
+        } /* * hepsini etkiler ve içinde yaptığımız işlem html resetleme işlemi */
+        div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: aqua;
+            border-radius: 5px;
+            border-width: 20px;
+            text-align: center;
+            
+        }
+        .box1{
+            margin: 50px 100px;  /* margin borderın dışa olan uzaklığını verir. */
+            
+        }
+        .box2{
+            padding: 50px; /* padding ise iç kısımdaki cisme olan uzaklığını verir. */
+        }
+        .box3{
+            margin: auto;
+        }
+        .icbox{
+            background-color: orange;
+            border-width: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1 <div class="icbox" style="width: 20px; height: 20px;
+        background-color: orange; margin: auto;"></div></div><hr>
+    <div class="box2">2 <div class="icbox" style="width: 20px; height: 20px;
+    background-color: orange; margin: auto;"></div></div><hr>
+    <div class="box3">3 <div class="icbox" style="width: 20px; height: 20px;
+        background-color: orange; margin: auto;"></div></div><hr>
+    
+</body>
+</html>
